@@ -6,7 +6,7 @@ Created on Mon Aug 10 12:35:04 2020
 """
 
 def lcsubstring(X, Y, m,n):
-    T = [[0 for i in range(n+1) for j in range(m+1)]]
+    T = [[0 for i in range(n+1)] for j in range(m+1)]
     
     maxlen = 0
     endindex = m
@@ -25,4 +25,7 @@ X = 'BABA'
 Y = 'ABAB'
 m = len(X)
 n = len(Y)
-print(lcsubstring(X, Y, m, n))
+print('-'*10+'*'*5+'-'*10)
+print('Using Dynamic Programming :- ')
+print('Longest common sub-String :- ', lcsubstring(X, Y, m, n))
+print('-'*10+'*'*5+'-'*10)

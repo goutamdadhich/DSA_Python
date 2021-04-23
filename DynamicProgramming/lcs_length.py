@@ -6,8 +6,9 @@ Created on Mon Aug 10 11:16:59 2020
 """
 
 """
-LCS Problem 
+LCS Problem -> Printing Length 
 """
+
 d = {}
 
 def Lcs_rec(X, Y, m, n):
@@ -33,7 +34,7 @@ def Lcs_rec_dp(X, Y, m, n):
     return d[key]
 
 def Lcs_dp(X, Y, m, n):
-    T = [[0 for i in range(n+1)] for j in range(m+1)]
+    T = [[0 for i in range(n+1)] for j in range(m+1)] # [[0]*(n+1)]*(m+1) 
     
     for i in range(1,m+1):
         for j in range(1,n+1):
